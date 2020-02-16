@@ -9,8 +9,8 @@ tags:
   - ROM
 ---
 ## 编译源码
-- 在 https://source.android.com/setup/start/build-numbers 查找 QQ1A.200105.002 对应的分支：android-10.0.0_r21，记住分支名
 
+- 在 https://source.android.com/setup/start/build-numbers 查找 QQ1A.200105.002 对应的分支：android-10.0.0_r21，记住分支名
 ``` shell
 mkdir Pixel2
 cd Pixel2
@@ -31,6 +31,7 @@ source build/envsetup.sh
 lunch aosp_walleye-userdebug
 make -j24
 ```
+
 - 编译SKD
 ``` shell
 make -j32 && make dmtracedump -j32 && make etc1tool -j32 && make split-select -j32
@@ -45,6 +46,7 @@ make sdk -j32 && make win_sdk -j32
 执行：fastboot flashall -w
 烧写完成后，执行：fastboot reboot
 ```
+
 ## 烧写TWRP
 - 从https://twrp.me/google/googlepixel2.html 上选择American版本
 - 跳转到https://dl.twrp.me/walleye/ ，下载twrp-3.3.0-0-walleye.img和
