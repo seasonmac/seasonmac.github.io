@@ -22,7 +22,7 @@ echo "ro.product.locale.region=CN"
 
 ### 定制ntp服务器地址
 - 在**frameworks/base/core/res/res/values/config.xml**文件中，修改时间同步服务器地址**time.android.com**为**pool.ntp.org**
-```xml
+``` xml
 diff --git a/core/res/res/values/config.xml b/core/res/res/values/config.xml
 index d1b3fec..47ef4f1 100644
 --- a/core/res/res/values/config.xml
@@ -40,7 +40,7 @@ index d1b3fec..47ef4f1 100644
 
 ### 定制网络连接监控服务器地址
 - 在**frameworks/base/services/core/java/com/android/server/connectivity/NetworkMonitor.java**文件中，将谷歌的服务器地址修改为国内的地址
-```java
+``` java
 diff --git a/services/core/java/com/android/server/connectivity/NetworkMonitor.java b/services/core/java/com/android/server/connectivity/NetworkMonitor.java
 index 0ee2a41..ca5fd11 100644
 --- a/services/core/java/com/android/server/connectivity/NetworkMonitor.java
