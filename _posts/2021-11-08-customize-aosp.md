@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "定制AOSP未国内版本"
+title: "定制AOSP编译的ROM为国内版本"
 subtitle: 'on Pixel 2 Device'
 author: "seasonpplp"
 header-style: text
