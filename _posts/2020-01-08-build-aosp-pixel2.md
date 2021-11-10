@@ -32,7 +32,7 @@ lunch aosp_walleye-userdebug
 make -j24
 ```
 
-- 编译SKD
+- 编译SDK
 ``` shell
 make -j32 && make dmtracedump -j32 && make etc1tool -j32 && make split-select -j32
 make bcc_compat -j32 && make apksigner -j32 && make dx -j32 && make libaapt2_jni -j32
